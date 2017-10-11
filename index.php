@@ -1,7 +1,8 @@
 <!--
 NOtes:
 
-
+Info on binding in es6:
+https://qiita.com/cubdesign/items/ee8bff7073ebe1979936
  -->
 <!DOCTYPE html>
 <html>
