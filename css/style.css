@@ -1,6 +1,28 @@
-body {
+.box {
+  max-width: 500px;
   border: 2px solid black;
-  color: red;
-  background-color: gray; }
-
-/*# sourceMappingURL=style.css.map */
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.box h2 {
+  margin: 0;
+}
+.box .title {
+  font-weight: bold;
+  font-style: italic;
+}
+.box ul {
+  padding: 0;
+}
+.box ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.box .user-portion span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.box .user-portion input {
+  font-size: 50px;
+}

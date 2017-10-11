@@ -5,8 +5,8 @@ class AppComponent extends React.Component {
   }
   render() {
     return (
-      <div>
-        <TitleComponent/>
+      <div className="box">
+        <TitleComponent title="First React App"/>
         <NavigationComponent/>
         <IncreaseValueComponent/>
       </div>
@@ -22,7 +22,7 @@ class TitleComponent extends React.Component {
   render() {
     return (
       <h2>
-        Title here
+        {this.props.title}
       </h2>
     )
   }
@@ -74,7 +74,7 @@ class IncreaseValueComponent extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="user-portion">
         <span>{this.state.value}</span>
         <div>
           <input type="button" value="+" onClick={this.change} />
@@ -87,6 +87,6 @@ class IncreaseValueComponent extends React.Component {
 /* Render */
 React.render(
   <AppComponent/>,
-  document.getElementById('box')
+  document.getElementById('react-app')
 );
 /* // Render */
