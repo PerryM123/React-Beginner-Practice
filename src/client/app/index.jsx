@@ -10,7 +10,6 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <p> Hello React Project</p>
         <AppComponent />
       </div>
     );
