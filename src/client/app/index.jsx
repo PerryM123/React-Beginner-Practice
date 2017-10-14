@@ -2,10 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import AppComponent from './AppComponent.jsx';
-import AwesomeComponent from './AwesomeComponent.jsx'; // do I need
-import AboutUsComponent from './AboutUsComponent.jsx'; // do I need
-// import AwesomeComponent from './AwesomeComponent.jsx';
-// ...
+import { BrowserRouter } from 'react-router-dom';
+
 class App extends React.Component {
   render () {
     return (
@@ -16,4 +14,8 @@ class App extends React.Component {
   }
 }
 
-render(<App/>, document.getElementById('app'));
+render(
+	<BrowserRouter>
+		<App/>
+	</BrowserRouter>, 
+	document.getElementById('app'));

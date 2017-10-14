@@ -1,8 +1,9 @@
 import React from 'react';
 
 import TitleComponent from './TitleComponent.jsx';
-import NavigationComponent from './NavigationComponent.jsx';
+import HeaderComponent from './HeaderComponent.jsx';
 import IncreaseValueComponent from './IncreaseValueComponent.jsx';
+import FooterComponent from './FooterComponent.jsx';
 
 /* AppComponent */
 class AppComponent extends React.Component {
@@ -13,8 +14,9 @@ class AppComponent extends React.Component {
     return (
       <div className="box">
         <TitleComponent title="First React App"/>
-        <NavigationComponent/>
+        <HeaderComponent/>
         <IncreaseValueComponent/>
+        <FooterComponent/>
       </div>
     )
   }
