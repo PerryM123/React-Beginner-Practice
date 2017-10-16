@@ -10,6 +10,10 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  devServer: {
+    contentBase: "./src/client",
+    hot: true
+  },
   module : {
     loaders : [
       {
